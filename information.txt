@@ -1,0 +1,15 @@
+npm install react-router-dom
+
+
+START:
+Na /frontend si dám sledování databáze json: Musím zapnout na CMD a né PowerShell
+json-server --watch db.json --static ./img --port 3001
+
+na /frontend si dám pro zapnutí Reactu:
+npm start
+
+Spring zapnu na HelloController.java a Run project
+
+
+INFO:
+Frontend aplikace nám dává HTTP requesty na rozhraní s daty

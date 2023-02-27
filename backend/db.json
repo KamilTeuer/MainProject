@@ -1,0 +1,94 @@
+{
+  "allMovies": [
+    {
+      "id": 1,
+      "image": "http://localhost:3001/movie1.png",
+      "title": "Enola Holmesová 2",
+      "age": "+13",
+      "tags": "Vtipný * Napínavý * Rodina",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+      "price": 100
+    },
+    {
+      "id": 2,
+      "image": "http://localhost:3001/movie2.png",
+      "title": "Enola Holmesová",
+      "age": "+13",
+      "tags": "Vtipný * Napínavý * Rodina",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+      "price": 150
+    },
+    {
+      "id": 3,
+      "image": "http://localhost:3001/movie3.png",
+      "title": "Rocknrolla",
+      "age": "+16",
+      "tags": "Gangster * Napínavý * Násilí",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+      "price": 200
+    },
+    {
+      "id": 4,
+      "image": "http://localhost:3001/movie4.png",
+      "title": "Patriot",
+      "age": "+16",
+      "tags": "Gangster * Napínavý * Násilí",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+      "price": 50
+    },
+    {
+      "id": 5,
+      "image": "http://localhost:3001/movie5.png",
+      "title": "Telefon pana Harrigana",
+      "age": "+16",
+      "tags": "Gangster * Napínavý * Násilí",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+      "price": 250
+    },
+    {
+      "id": 6,
+      "image": "http://localhost:3001/movie6.png",
+      "title": "Stážista",
+      "age": "+16",
+      "tags": "Rodinný * Napínavý * Romantický",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+      "price": 300
+    },
+    {
+      "id": 7,
+      "image": "http://localhost:3001/movie7.png",
+      "title": "Život",
+      "age": "+13",
+      "tags": "Vesmír * Napínavý * Nebezpečí",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+      "price": 175
+    },
+    {
+      "id": 8,
+      "image": "http://localhost:3001/movie8.png",
+      "title": "Kód za miliardu dolarů",
+      "age": "+13",
+      "tags": "IT * Napínavý",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+      "price": 225
+    },
+    {
+      "id": 9,
+      "image": "http://localhost:3001/movie9.png",
+      "title": "Pracháči",
+      "age": "+16",
+      "tags": "Dokument * Napínavý",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+      "price": 125
+    },
+    {
+      "id": 10,
+      "image": "http://localhost:3001/movie10.png",
+      "title": "Whoami",
+      "age": "+13",
+      "tags": "Gangster * Napínavý * Násilí",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+      "price": 375
+    }
+  ]
+}
