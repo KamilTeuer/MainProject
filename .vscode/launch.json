@@ -20,41 +20,6 @@
         },
         {
             "type": "java",
-            "name": "Launch SykoraPrvocisla",
-            "request": "launch",
-            "mainClass": "cz.MyTest.Table.SykoraPrvocisla",
-            "projectName": "backend"
-        },
-        {
-            "type": "java",
-            "name": "Launch TestPrvo",
-            "request": "launch",
-            "mainClass": "cz.MyTest.Table.TestPrvo",
-            "projectName": "backend"
-        },
-        {
-            "type": "java",
-            "name": "Launch Prvo",
-            "request": "launch",
-            "mainClass": "cz.MyTest.Table.Prvo",
-            "projectName": "backend"
-        },
-        {
-            "type": "java",
-            "name": "Launch Prvocisla",
-            "request": "launch",
-            "mainClass": "cz.MyTest.Table.Prvocisla",
-            "projectName": "backend"
-        },
-        {
-            "type": "java",
-            "name": "Launch Prvocisla",
-            "request": "launch",
-            "mainClass": "cz.MyTest.TestJava.Prvocisla",
-            "projectName": "backend"
-        },
-        {
-            "type": "java",
             "name": "Launch TableCSV",
             "request": "launch",
             "mainClass": "cz.MyTest.Table.TableCSV",
