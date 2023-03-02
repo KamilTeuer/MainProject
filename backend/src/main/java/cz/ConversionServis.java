@@ -15,7 +15,7 @@ public class ConversionServis {
         return movieDTO;
     }
     
-    // Přemapování z movieDTO na entitu movieEntity:
+    // Přemapování z movieDTO na entitu movie:
     public static Movie toMovie (MovieDTO movieDTO) {
         Movie movieEntity = new Movie();
         movieEntity.setId(movieDTO.getId());

@@ -32,7 +32,7 @@ public class MovieController {
     @GetMapping()
     public List<MovieDTO> getAllMovies(
         @RequestParam(defaultValue = "0") Integer pageNumber, 
-        @RequestParam(defaultValue = "5") Integer pageSize, 
+        @RequestParam(defaultValue = "6") Integer pageSize, 
         @RequestParam(defaultValue = "id") String sortBy) 
         {
 

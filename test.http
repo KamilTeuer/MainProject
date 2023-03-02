@@ -154,4 +154,4 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:8080/allMovies?pageSize=7&pageNumber=1&sortBy=title
+GET http://localhost:8080/allMovies?pageSize=1&pageNumber=1&sortBy=title
