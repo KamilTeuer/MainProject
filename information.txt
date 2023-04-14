@@ -11,7 +11,7 @@ Ve složce projectu React :
     npm install firebase@8.5
     npm install react-router-dom@6
 
-
+ 
 
 INFO:
 Frontend aplikace nám dává HTTP requesty na rozhraní s daty
