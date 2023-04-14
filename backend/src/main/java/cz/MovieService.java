@@ -5,10 +5,13 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 
+// Anotace nemají za běhu žádný účinek!
 // Návrhový architektonický vzor u kterého musíme používat Controler, Servis a Repository beany.
 // Odděleně a komunikovat spolu = Vícevrstvá architektura  
 
 @Service    // V MovieController mi vyskakovala chyba, že to není žádná beana
+            // Informuje rámec Spring Dependecy Injection, že jí lze použít na Dependency Injection
+            // @Autowired informuje DI, že by mělo být pole vyplněno pomocí DI.
 public class MovieService {
 
     private final MovieRepository movieRepository;

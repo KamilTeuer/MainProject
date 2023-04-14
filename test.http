@@ -4,6 +4,20 @@
 # Rest klient vyžaduje volný řádek mezi requestem a tělem!
 ### oddělovač mezi požadavky
 
+###
+POST http://localhost:3001/allMovies
+Content-Type: application/json
+
+{
+      "image": "http://localhost:3001/movie1.png",
+      "title": "Enola Holmesová 2",
+      "age": "+13",
+      "tags": "Vtipný * Napínavý * Rodina",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem accusantium amet nemo minus quo architecto quas",
+      "price": 100
+    }
+
+###
 POST http://localhost:8080/allMovies
 Content-Type: application/json
 

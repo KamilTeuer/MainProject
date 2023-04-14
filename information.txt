@@ -5,11 +5,70 @@ START:
 Na /frontendweb si dám sledování databáze json: Musím zapnout na CMD a né PowerShell
 json-server --watch db.json --static ./img --port 3001
 
-na /frontendweb si dám pro zapnutí Reactu:
-npm start
 
-Spring zapnu na HelloController.java a Run project
+FIREBASE:
+Ve složce projectu React : 
+    npm install firebase@8.5
+    npm install react-router-dom@6
+
 
 
 INFO:
 Frontend aplikace nám dává HTTP requesty na rozhraní s daty
+
+
+"Kamil Teuer"
+site:www.ekospace.cz
+filetype:pdf "online marketing"
+inurl:stephen-jobs
+inurl:login mcdonalds
+
+SPRING:
+Anotace -   jsou dekorátory, které se aplikují na konstrukty Java, jako jsou třídy, metody, nebo pole, které přidružují
+            metadata ke konstrukci. Samy o sobě nespouštějí žádný kód.
+            Anotace je značka, která spoujuje informace s konstrukcí programu, ale nemá žádný účinek za běhu.
+            Kompilátor zahrnuje anotace za běhu.
+            Vytvoření anotace vyžaduje 
+                1) zásady uchování - jak dlouho má být anotace uchovávána z hlediska životního cyklu
+                    3 standartní zásady uchování:
+                        a) Source   - Kompilátor zahodí anotace
+                        b) Class    - Anotace jsou zaznamenány v souboru třídy vygenerovaném kompilátorem, ale nevyžaduje se
+                                      aby je uchovával JVM, který zpracovává soubor třídy za běhu.
+                        c) Runtime  - Anotace jsou zaznamenány do souboru třídy kompilátorem a uchovávány za běhu JVM.
+                2) cíl - na které konstrukce Java lze anotaci použít.
+
+
+Přidání anotace:
+    1) Informujeme kompilátor o varováních a chybách
+    2) Manipulujeme se zdrojovým kódem v době kompilace
+    3) Upravujeme nebo prozkoumáváme chování za běhu
+
+Základní anotace:
+    @Autowired              - 
+
+    @Override               - metoda přepíše, nebo nahradí chování zděděné metody
+    @SuppressWarnings       - chceme ignorovat určitá varování v části kódu
+    @Deprecated             - použití k API jako neurčeného k použití
+    @SafeVarargs            - k potlačení varování souvisejícího s používáním varargů (String... values)
+    @FunctionalInterface    - Definuje rozhraní jediné abstraktní metody (SAM)
+    @Native                 - vztahuje se pouze na pole. Označuje, že anotované pole je konstanta, na kterou lze odkazovat z nativního kódu
+
+Meta-anotace:
+    @Target     - Popisuje cíle, na které lze anotaci použít.
+    @Retention  - Popisuje, jak dlouho by měla být anotace uchovávána kompilátorem.
+    @Inherited  - Popisuje, že anotace by měla být zděděná podtypem, pokud je aplikována na nadtyp.
+    @Deprecated - Označuje, že anotace (nebo jakýkoliv jiný typ) by se už neměla používat.
+    @Repeatable - Anotace může být použita vícekrát ve stejném kontextu (třída může mít stejnou anotaci 
+                  použitou na ní dvakrát nebo vícekrát)
+
+
+
+    REACT: 
+    VSCode doplňky:
+    ES7 + React/Redux/React-Native      - RAFCE !!! - komponenty se doplní automaticky 
+
+
+    CMD:
+    npm install react-icons --save      - React icony
+    npm install react-router-dom@6      - React router
+    npm run build                       - Build pro web

@@ -1,0 +1,151 @@
+Extensions: pro GIT
+gitlens GIT Supercharget    =   
+Git graph       =   Vizualizace jednotlivé procesy v GITě 
+VS code icons
+
+Git je nástroj na verzování kódu. Pomáha pro uchovávání kódu a práci v týmu.
+
+Při použití tabulátoru se doplní text, název atd.. při zmáčknutí 2x a více, zobrazí všechny možné doplnění (co je na výběr).
+
+CTRL + L    = Clear
+
+$ git --help  = Vypsání všech možných příkazů.
+
+$ git config --global user.name "Kamil Teuer"                 // nastavení jména
+$ git config --global user.email "kamil.teuer@volny.cz"       // nastavení emailu
+$ git config --list       //  Při dvojtečce stačí zmáčknout "q" jako quit a zase je to normální.
+START:
+$ git init      =   přidá složku .git do umístění souboru, kde bude vše ukládáno.
+$ git status    =   zobrazí na jaké větvi se nacházím. Žádné commity se nenacházejí na lokálním repository. 
+$ git add index.java       =   Jaké soubory budeme chtít přidat do toho Stage area a vytvořit z nich Snap Shoot.
+
+$ git commit    =   Default editor bracked pro práci s commitmy a nazývá se "Vim"
+                    Pro zápis musíme první zmáčknoust písmeno "i" (insert mod)
+                    :q  =   vypnout Vim (nesmí tam být žádné změny, nebo komentáře)
+                    :q! =   vypne Vim a NEULOŽÍ případné změny.
+                    :wq =   "Write Quit" Zapiš a vypni se.
+$ git commit -m "Add initial source code for "Ahoj"""       
+                        =   Přesun z Stage area do Local repository. Podívá se co se změnilo ve Stage area (index) 
+                        (Zabal mi změny a dej mi je do Local reporitory.)
+                        Je složen z několika částí:
+                            a)  Soubory, které chceme aby byli součástí commitu.
+                            b)  Na pozadí vždy přiřadí můj user.name a user.email 
+                            c)  Git přiřadí tomuto commitu nějaký popis. Musíme ho přidat jako commit messeage.
+                                Zpráva (popis) našeho commitu.
+                                "Add initial source code for "Ahoj"""
+            1 file changed, 6 insertions(+)
+                1 změněný soubor, 6 změněných řádků
+
+$ git log       =   Vypíše všechny commity, které se nachází v aktuálním branch (master) v mojem locálním repositáři.
+$ git add .     =   Přidá všechny soubory v rodičovské složce do Stage area
+$ git add *.java    =   Přidá všechny soubory, které jsou .java v rodičovské složce do Stage area.
+GIT pracuje se soubory.
+
+Vytvoření souboru:
+$ touch xxxxx.xxxx    Např.: $ git touch textovySoubor.txt
+
+Přidání souboru do vytvořeného commitu:
+$ git add xxxxx.xxxx   = Přidat požadované soubory, které chci připojit
+$ git commit --amend    = Tímto příkazem přidáte vše ve Stage area do posledního commitu
+
+Ignore souboru, aby se nikdy nevkládal do stage area a následně do commitu. Bude ignorován (secret):
+1. vytvoření nového skrytého souboru:
+  $ touch .gitignore
+  a do toho soubur napsat skryté soubory: Například: Kamil88.pub  ,nebo složka:  Nová Složka/
+  .gitignore se ale musí commitnout
+
+Mazání souborů z GITu:
+  1) Pravým na soubor a delete.
+  2) rm vedlejsi.java   = rm xxxxx.xxxx   - Smaže daný soubor
+  3) $ git rm -rf .xxxx.xxxx    =   Smaže složku
+
+Návart smazaného souboru z commitu:
+$ git reset HEAD  = Smazali se všechny změny, které jsme pushli pomocí git add. (poslední commit)
+$ git checkout .  = Navrátí změny zpět do předchozího commitu (smazané soubory se navrátí)
+
+$ git rm xxxxx.xxxx   = Lekcia 8 6:20
+$ git rm -r           = Lekcia 8 6:20
+
+Přejmenování: 
+1)  Při přejmenování Git bere dvě operace (smazání prvního a přidání druhého) i když se ten samý soubor jenom přejmenoval.
+    $ git add Zkouska.txt prejmenovane.txt  = Mělo by to ukázat, že ten jeden soubor byl "renamed" (přejmenovaný). Mě to neukázalo. (smazán a nový)
+2) Přejmenování pomocí výpisu: 
+    $ git mv Zkouska.txt novynazev.txt = Zkouska.txt je source a novynazev.txt je destination
+
+POZOR - smaže všechny poslední úpravy!
+git reset --hard    = Smaže se všechno v posledním commit!!! Pozor na to - budou smazány VŠECHNY změny!
+
+Vypsání obsahu:
+$ cat xxxxx.xxxx  Např.: $ cat gitinfo.txt  = Tímto příkazem vypíšete obsah souboru
+
+GUI = Grafické uživatelké prostředí (gitkraken.com) 19.Git GitHUB
+
+GIT BRANCH:
+$ git branch  = zobrazí jaké větve máme v projektu
+$ git log     = zobrazí, kde je aktuální branch
+
+$ git switch -c database_access   = Vytvoří novou branch s názvem database_access a hned mě tam do ní přehodí.
+$ git branch database_access    =   Vytvoření nové branch s názvem "database_access".
+  Při vytvoření nové branch se pořád zapisují změny do hlavní branch. Musíme se přepnout:
+$ git switch database_access      =   Přepne mě do větve database_access
+$ git checkout database_access    =   Přepne mě do větve database_access  // checkout se už moc nepoužívá 
+$ git checkout master   =   přepne mě zpátky do hlavní větve.
+$ git checkout 2fe3809  = přepne mě do určitého commitu.
+
+$ git log --oneline  = Ukazuje pouze commity z aktuální branche.
+$ git log --oneline --all   = Ukáže změny na všech branch. 
+$ git log --oneline --all --graph    = Ukáže změny na všech branch graficky.
+$ git show 2fe3809 = Zobrazení co se provedlo v daném commitu.
+
+Spojení větví (merge):
+$ git merge database_access   =   Spojení (merge) vedlejší větve s master větví
+  Po spojení vedlejší větve s hlavní (master) můžeme větev smazat, neboť už všechny úpravy,
+  které byly ve vedlejší branch jsou obsaženy v novém commitu.
+$ git branch -d database_access   = Smazání vedlejší branch.
+$ git branch -D database_access   = Smazání vedlejší branch v případě, že není vedlejší branch full sjednocená (merge).
+                                    Vynucení smazání!
+$ git 
+
+
+
+
+Remote repository: GitHUB, BitBucket, GitLAB - liší se pouze rozhraním
+
+$ git remote    =   Zobrazí remote repository, jestli jsou nějaké navázané na hlavní.
+$ cat .git/config    = Vypíše mi moje remote repository
+$ git remote add origin https://github.com/KamilTeuer/git-tutorial-cz.git   // Spojení a přejmenování na origin
+$ git remote      = Zobrazí remote repository
+$ git remote -v   = Push je velmi důležitý - kde ukazuje origin
+
+Jak dostat náš kód do GitHUBu: Šifrování klíčem: SSH Klíč
+$ ssh-keygen -o     = Vytvoření složky ssh a vygenerování. První enter potvrdí umístění klíčů do adresáře: 
+                      Enter file in which to save the key (/c/Users/Kamil/.ssh/id_rsa):
+                      Potom si vybrat heslo a dvakrát ho napsat a pokaždé odentrovat. Heslo: Kamil/Kamil88
+$ cat /c/Users/Kamil/.ssh/id_rsa.pub    = Vygeneruje klíč, který začíná ssh-rsa.....
+Potom na mém profilu GitHub kliknu na mojí ikonu>settings>SSH and GPG Keys> klik na "new SSH key"> Zkopírujeme text klíče a napíšeme název.
+$ git branch -M main  = Přejmenování hlavní branch Master na Main.
+$ git push -u origin main   = Zabalení všeho, co je v main branch do origin
+
+
+
+
+********** **********
+…or create a new repository on the command line
+echo "# git-tutorial-cz" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/KamilTeuer/git-tutorial-cz.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/KamilTeuer/git-tutorial-cz.git
+git branch -M main
+git push -u origin main
+
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+********** **********
+
+

@@ -4,10 +4,23 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
-
 import javax.swing.JFileChooser;
 
 public class PrvocislaCSV {
+
+    static boolean testNumber(int number) {
+        if (number <= 1)
+            return false;
+        if (number == 2)
+            return true;
+        if (number % 2 == 0)
+            return false;
+        for (int i = 3; i <= Math.sqrt(number); i += 2) {
+            if (number % i == 0)
+                return false;
+        }
+        return true;
+    }
 
     public static void main(String[] args) {
         JFileChooser fileChooser = new JFileChooser();
@@ -28,8 +41,7 @@ public class PrvocislaCSV {
                     } catch (Exception ex) {
                         continue;
                     }
-                    if (num > 0 && (num % 2 != 0 || num == 2) && (num % 3 != 0 || num == 3)
-                            && (num % 5 != 0 || num == 5)) {
+                    if (testNumber(num)) {
                         System.out.println(num);
                     }
                 }

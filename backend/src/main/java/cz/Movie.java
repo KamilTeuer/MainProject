@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-@Entity // Data budu ukládat a aby přetrvávala.
+@Entity // Data budu ukládat a aby přetrvávala. Používána frameworkem Hibernate
 @Data
 @AllArgsConstructor
 public class Movie {
